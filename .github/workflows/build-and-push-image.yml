@@ -24,6 +24,9 @@ jobs:
           commit_tag=$no_tag:sha-$GITHUB_SHA
           branch_tag=$no_tag:${{ steps.branch.outputs.branch }}
           tags=$commit_tag,$branch_tag
+          if [ "${{ steps.branch.outputs.branch }}" == "main" ]; then
+            tags="$tags,$no_tag:latest"
+          fi
 
           echo "No tag: $no_tag"
           echo "Commit tag: $commit_tag"
