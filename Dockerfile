@@ -1,5 +1,9 @@
 FROM python:3
 
+LABEL org.opencontainers.image.source=https://github.com/EugZol/who_signed
+LABEL org.opencontainers.image.description="Who signed bitcoin multisig transaction? This script can provide the answer."
+LABEL org.opencontainers.image.licenses=MIT
+
 ENV PYTHONDONTWRITEBYTECODE 1
 
 RUN python -m pip install pipenv
