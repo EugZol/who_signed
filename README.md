@@ -15,7 +15,7 @@ pipenv run python main.py -t <txid> # testnet
 or via Docker:
 
 ```
-docker build . -t who_signed
+docker run --rm -it ghcr.io/who_signed python main.py <txid>
 ```
 
 *Example*:
