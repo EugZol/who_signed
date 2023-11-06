@@ -15,13 +15,13 @@ pipenv run python main.py -t <txid> # testnet
 or via Docker:
 
 ```
-docker run --rm -it ghcr.io/who_signed python main.py <txid>
+docker run --rm -it ghcr.io/eugzol/who_signed python main.py <txid>
 ```
 
 *Example*:
 
 ```
-% docker run --rm -it who_signed python main.py 63790adc5fd90dc307ca926f77b355984d7b0ff512df6d8a262a090558168783
+% docker run --rm -it ghcr.io/eugzol/who_signed python main.py 63790adc5fd90dc307ca926f77b355984d7b0ff512df6d8a262a090558168783
 Getting https://blockstream.info/api//tx/63790adc5fd90dc307ca926f77b355984d7b0ff512df6d8a262a090558168783/hex
 Getting https://blockstream.info/api//tx/63790adc5fd90dc307ca926f77b355984d7b0ff512df6d8a262a090558168783
 Input #0 from bc1qwqdg6squsna38e46795at95yu9atm8azzmyvckulcc7kytlcckxswvvzej (48714061 satoshis) (witness)
